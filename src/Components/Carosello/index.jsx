@@ -23,12 +23,13 @@ const carouselref = useRef();
                     <img src="https://picsum.photos/id/109/250/300" alt="4"/>
                     <img src="https://picsum.photos/id/110/250/300" alt="5"/>
                     <img src="https://picsum.photos/id/112/250/300" alt="6"/>
+                    
                 </div>
             </section>
         </main>
       <div className={styles.carosel__btn}>
-        <button className={styles.btn} onClick={() => moveRef(carouselref, "right")}>{"<"}</button>
-        <button className={styles.btn} onClick={() => moveRef(carouselref, "left")}>{">"}</button>
+        <button className={styles.btn} onClick={() => moveRef(carouselref, "right")}>{<img src="https://img.icons8.com/flat-round/50/000000/arrow-left.png"/>}</button>
+        <button className={styles.btn} onClick={() => moveRef(carouselref, "left")}>{<img src="https://img.icons8.com/flat-round/50/000000/arrow-right.png"/>}</button>
       </div>
     </div>
   );
